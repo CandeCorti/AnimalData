@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Geologica:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", serif;
+  margin: 0;
+}
+
+/*Título*/
+
+h1,
+h1 + p {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 90px;
+}
+
+h1 + p {
+  font-family: "Afacad Flux", sans-serif;
+  color: #848482;
+}
+
+header,
+main,
+[src="imagenes/imagenfinal.jpg"] {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*link de instagram*/
+
+p a {
+  width: 100px;
+  display: block;
+  background-color: #6cb4ee;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  transition-property: all;
+}
+
+p a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  width: 200px;
+}
+
+/*termina el título*/
+
+main {
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+/*Imagen pulpo grande*/
+
+[src="imagenes/imagenfinal.jpg"] {
+  display: block;
+  justify-content: center;
+  border: 3px solid;
+}
+
+/*Segundo título*/
+
+main > h2 {
+  background-color: #6cb4ee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+/*bloque de imágenes*/
+
+main > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > div img {
+  width: 30%;
+  height: auto;
+  display: block;
+  border: 3px solid #6cb4ee;
+  transition-duration: 1s;
+}
+
+main > div img:hover {
+  width: 50%;
+}
+
+/*Imágen con texto al costado*/
+
+section {
+  margin: 100px 0px 100px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section > img {
+  width: 50%;
+  border: 3px solid;
+}
+
+section div {
+  background-color: #6cb4ee;
+  padding: 25px;
+  width: 45%;
+}
+
+section h2 {
+  text-decoration: underline;
+  font-family: "Geologica", sans-serif;
+  font-size: 2.2em;
+}
+
+/*Final*/
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
+/*Media*/
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  h1 {
+    line-height: 30px;
+  }
+
+  main > div {
+    flex-direction: column;
+  }
+
+  [src="imagenes/imagenfinal.jpg"] {
+    width: 100%;
+  }
+
+  main > div {
+    width: 100%;
+  }
+
+  main > div img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  main > div img:hover {
+    width: 100%;
+    border: 3px solid #cf4a4c;
+    border-radius: 50%;
+  }
+
+  section {
+    flex-direction: column;
+    margin: 30px 0px 30px 0px;
+  }
+
+  section img {
+    width: 100%;
+  }
+
+  section div {
+    width: 100%;
+  }
+}
